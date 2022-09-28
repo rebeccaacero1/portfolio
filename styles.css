@@ -39,3 +39,24 @@ nav ul li a:hover{
     color: red;
 
 }
+.details{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.details h1{
+    font-size: 60px;
+}
+
+.details a{
+    background: #212121;
+    padding: 10px 20px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
