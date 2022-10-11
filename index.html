@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Website</title>
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--BOOTSTRAP CSS EXTERNAL LINKS-->
 
@@ -17,24 +19,142 @@
      </style>
 </head>
 <body>
-   <div class="hero">
-    <nav>
-        <img src="images/coding-logo-design-template-free-vector.jpg" alt="">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navColor">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+    
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+   <section>
+    <div class="hero">
+   
+        <div class="details">
+            <h1>Rebecca Acero</h1>
+            <p>I'm a full stack Developer! <br>
+            </p>
+        </div>
+        <div class="images">
+            
+            <img src="images/htmlCrop.png" class="left">
+            <img src="images/cssCrop.png" alt="">
+            <img src="images/eccaCrop.png" class="eccaPP">
+        </div>
+       </div>
+   </section>    
+
+
+   <!--About Page-------------------------------------------------------------------->
+
+
+
+   <section class="aboutPage">
+    <div class="about" id="about">
+        <h1>My softskills</h1>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li>basic microsoft skills</li>
+            <li>basic analytics skills</li>
+            <li>basic collaboration using GitHub</li>
+            <li>hotel operations</li>
         </ul>
-    </nav>
-    <div class="details">
-        <h1>Rebecca Acero</h1>
-        <p>I'm a full stack Developer!</p>
+
+            <div class="page2">
+                
+                <img src="images/images2/pexels-fauxels-3183156.jpg" alt="">
+                
+                <img src="images/images2/pexels-fauxels-3183186.jpg" alt="">
+              
+                <img src="images/images2/1.jpg" alt="">
+                
+                <img src="images/images2/2.jpg" alt="">
+                
+                <img src="images/images2/3.jpg" alt="">
+            
+            </div>  
+    </div>   
+   </section>
+
+
+<!--CONTACT PAGE-->
+
+   <section class="contact" id="contact">
+   
+    <div class= "container-fluid">
+        <h1>CONTACT</h1>
+        <div class="contactBlock">
+            <div>
+                <img src="images/images2/2.jpg" alt="">
+            </div>
+            <div class="contactInfo">
+                <form action="">
+                    <fieldset>
+                        <legend>Enter your Name:</legend>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email:</legend>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message:</legend>
+                        <input type="text">
+                    </fieldset> 
+                    <button class="contactButton">CONTACT US</button>    
+                </form>
+            </div>
+            <div class="socialContacts">
+                <img src="images/images2/Gmail-logo.png" class="gmail" alt="">
+                <a href="">rebeccaacero1@gmail.com</a>
+                <img src="images/images2/Facebook-logo.png" alt="">
+                <a href="">rebeccaacero1@gmail.com</a>
+            </div>
+        </div>
+       
+           
+       
+       
     </div>
-    <div class="images">
-        <img src="images/eccaPP-luna.png" class="eccaPP">
-        <img src="images/left-luna.png" class="left">
-        <img src="images/right-luna.png" alt="">
-    </div>
-   </div>
+   
+
+   </section>
+
+   <!--BOOTSTRAP JS BUNDLE LINKS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
 </body>
 </html>
